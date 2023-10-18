@@ -12,6 +12,8 @@ class WeatherDataView: UIView {
     
     // MARK: - Property
     
+    var identifier: Int?
+    
     private lazy var backgroundView: UIView = {
         let view = UIView()
         view.backgroundColor = UIColor(patternImage: UIImage(named: "BackgroundImage")!)
@@ -126,6 +128,7 @@ class WeatherDataView: UIView {
         
         backgroundView.snp.makeConstraints { make in
             make.top.leading.bottom.trailing.equalToSuperview()
+            make.height.equalTo(117)
         }
         
         mainStackView.snp.makeConstraints { make in
@@ -136,5 +139,13 @@ class WeatherDataView: UIView {
     }
     
     // MARK: - methods
-    
+    func bindingData(weatherData: WeatherData, identifier: Int) {
+        self.identifier = identifier
+        titleLabel.text = weatherData.myLocation
+        locationLabel.text = weatherData.location
+        weatherLabel.text = weatherData.weather
+        temperatureLabel.text = "\(weatherData.temperature)°"
+        maxTempLabel.text = "최고:\(weatherData.maxTemperature)°"
+        minTempLabel.text = "최저:\(weatherData.minTemperature)°"
+    }
 }
