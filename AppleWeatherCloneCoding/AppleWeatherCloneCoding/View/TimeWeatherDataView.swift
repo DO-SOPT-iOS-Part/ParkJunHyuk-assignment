@@ -7,7 +7,7 @@
 
 import UIKit
 
-class TimeWeatherDataView: UIView {
+final class TimeWeatherDataView: UIView {
 
     // MARK: - Property
     

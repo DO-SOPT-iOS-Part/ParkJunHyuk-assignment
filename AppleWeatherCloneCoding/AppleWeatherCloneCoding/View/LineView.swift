@@ -8,7 +8,7 @@
 import UIKit
 
 
-class LineView: UIView {
+final class LineView: UIView {
     
     // MARK: - LifeCycle
     

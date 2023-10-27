@@ -7,7 +7,7 @@
 
 import UIKit
 
-class MainHeaderView: UIView {
+final class MainHeaderView: UIView {
 
     // MARK: - Property
     

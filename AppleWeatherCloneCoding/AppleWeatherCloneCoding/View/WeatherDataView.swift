@@ -8,7 +8,7 @@
 import UIKit
 import SnapKit
 
-class WeatherDataView: UIView {
+final class WeatherDataView: UIView {
     
     // MARK: - Property
     

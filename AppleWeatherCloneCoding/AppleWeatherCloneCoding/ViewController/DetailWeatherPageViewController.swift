@@ -7,7 +7,7 @@
 
 import UIKit
 
-class DetailWeatherPageViewController: UIPageViewController {
+final class DetailWeatherPageViewController: UIPageViewController {
     
     // MARK: - Property
     

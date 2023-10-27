@@ -7,7 +7,7 @@
 
 import UIKit
 
-class TabBarView: UIView {
+final class TabBarView: UIView {
 
     // MARK: - Property
     
