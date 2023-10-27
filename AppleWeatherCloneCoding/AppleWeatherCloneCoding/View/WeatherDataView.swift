@@ -30,7 +30,7 @@ class WeatherDataView: UIView {
     }()
     
     private lazy var verticalLocationStackView: UIStackView = {
-        let stackView = UIStackView(arrangedSubviews: [titleLabel, locationLabel])
+        let stackView = UIStackView(arrangedSubviews: [myLocationLabel, locationLabel])
         stackView.axis = .vertical
         stackView.distribution = .fill
         stackView.alignment = .leading
@@ -53,7 +53,7 @@ class WeatherDataView: UIView {
         return stackView
     }()
     
-    private lazy var titleLabel: UILabel = {
+    private lazy var myLocationLabel: UILabel = {
         let label = UILabel()
         label.font = .bold(size: 24)
         label.text = "나의 위치"
@@ -141,7 +141,7 @@ class WeatherDataView: UIView {
     // MARK: - methods
     func bindingData(weatherData: WeatherData, identifier: Int) {
         self.identifier = identifier
-        titleLabel.text = weatherData.myLocation
+        myLocationLabel.text = weatherData.myLocation
         locationLabel.text = weatherData.location
         weatherLabel.text = weatherData.weather
         temperatureLabel.text = "\(weatherData.temperature)°"

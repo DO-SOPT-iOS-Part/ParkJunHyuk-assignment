@@ -36,10 +36,32 @@ class MainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.navigationBar.isHidden = true
+        
+        searchBar.delegate = self
+        
         setLayout()
+        createWeatherView(searchText: searchBar.text ?? "")
     }
     
     // MARK: - layouts
+    
+    private func createWeatherView(searchText: String?) {
+        
+        mainStackView.arrangedSubviews.forEach { $0.removeFromSuperview() }
+        
+        for (index, data) in weatherData.enumerated() {
+            if searchText?.isEmpty ?? true || data.location.contains(searchText ?? "") {
+                let weatherDataView = WeatherDataView()
+                weatherDataView.bindingData(weatherData: data, identifier: index)
+                
+                // 생성된 WeatherDataView를 mainStackView에 추가
+                mainStackView.addArrangedSubview(weatherDataView)
+                
+                let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(weatherDataViewTapped(_:)))
+                weatherDataView.addGestureRecognizer(tapGestureRecognizer)
+            }
+        }
+    }
     
     private func setLayout() {
         self.view.addSubview(scrollView)
@@ -47,17 +69,6 @@ class MainViewController: UIViewController {
 
         [mainHeaderView, searchBar, mainStackView].forEach {
             contentView.addSubview($0)
-        }
-
-        for (index, data) in weatherData.enumerated() {
-            let weatherDataView = WeatherDataView()
-            weatherDataView.bindingData(weatherData: data, identifier: index)
-            
-            // 생성된 WeatherDataView를 mainStackView에 추가
-            mainStackView.addArrangedSubview(weatherDataView)
-            
-            let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(weatherDataViewTapped(_:)))
-            weatherDataView.addGestureRecognizer(tapGestureRecognizer)
         }
         
         scrollView.snp.makeConstraints { make in
@@ -101,8 +112,19 @@ class MainViewController: UIViewController {
     
     @objc private func weatherDataViewTapped(_ sender: UITapGestureRecognizer) {
         if let tappedView = sender.view as? WeatherDataView {
-            print(tappedView.identifier ?? 0)
+            let identifier = tappedView.identifier ?? 0
+            
+            let pageViewController = DetailWeatherPageViewController(transitionStyle: .scroll, navigationOrientation: .horizontal)
+            pageViewController.bindingData(weatherData: weatherData, identifier: identifier)
+            
+            navigationController?.pushViewController(pageViewController, animated: true)
         }
     }
 }
 
+extension MainViewController: UISearchBarDelegate {
+    
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        createWeatherView(searchText: searchText)
+    }
+}
