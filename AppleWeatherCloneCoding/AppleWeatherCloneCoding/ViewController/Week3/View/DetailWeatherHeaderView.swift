@@ -61,7 +61,6 @@ final class DetailWeatherHeaderView: UIView {
     
     override func layoutSubviews() {
            super.layoutSubviews()
-        temperatureLabel.frame = CGRect(x: 0, y: 0, width: self.frame.width, height: 108)
        }
     
     // MARK: - layouts
