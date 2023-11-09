@@ -116,11 +116,8 @@ extension Week3MainViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
  
-//        let pageViewController = Week3DetailWeatherViewController()
-//        pageViewController.bindData(forecaseInfo: forecastInfo[indexPath.row], identifier: indexPath.row)
-        
-        let pageViewController = DetailWeatherPageViewController(transitionStyle: .scroll, navigationOrientation: .horizontal)
-        pageViewController.bindingData(weatherData: weatherData, identifier: identifier)
+        let pageViewController = Week3DetailWeatherViewController()
+        pageViewController.bindData(forecaseInfo: forecastInfo[indexPath.row], identifier: indexPath.row)
         
         navigationController?.pushViewController(pageViewController, animated: true)
     }
