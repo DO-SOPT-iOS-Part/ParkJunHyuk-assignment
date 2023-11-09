@@ -1,0 +1,298 @@
+{
+  "forecastInfo": [
+    {
+      "headerInfo": {
+        "myLocation": "나의 위치",
+        "location": "의정부시",
+        "weather": "흐림",
+        "temperature": "21",
+        "maxTemperature": "29",
+        "minTemperature": "15"
+      },
+      "sections": [
+        {
+          "timeWeatherInfo": [
+            {
+              "time": "Now",
+              "weather": "cloud.moon",
+              "temperature": "21"
+            },
+            {
+              "time": "10시",
+              "weather": "cloud.drizzle",
+              "temperature": "21"
+            },
+            {
+              "time": "11시",
+              "weather": "cloud.heavyrain",
+              "temperature": "19"
+            },
+            {
+              "time": "12시",
+              "weather": "cloud.bolt",
+              "temperature": "19"
+            },
+            {
+              "time": "1시",
+              "weather": "cloud.sun.rain",
+              "temperature": "19"
+            },
+            {
+              "time": "2시",
+              "weather": "cloud.moon",
+              "temperature": "20"
+            },
+            {
+              "time": "3시",
+              "weather": "cloud.drizzle",
+              "temperature": "21"
+            },
+            {
+              "time": "4시",
+              "weather": "cloud.heavyrain",
+              "temperature": "20"
+            },
+            {
+              "time": "5시",
+              "weather": "cloud.bolt",
+              "temperature": "19"
+            },
+            {
+              "time": "6시",
+              "weather": "cloud.sun.rain",
+              "temperature": "16"
+            }
+          ]
+        },
+        {
+          "dailyWeatherInfo": [
+            {
+              "week": "오늘",
+              "weather": "sun.max.fill",
+              "precipitation": "",
+              "maxTemperature": "29",
+              "minTemperature": "15"
+            },
+            {
+              "week": "월",
+              "weather": "cloud.drizzle.fill",
+              "precipitation": "60",
+              "maxTemperature": "27",
+              "minTemperature": "18"
+            },
+            {
+              "week": "화",
+              "weather": "cloud.drizzle.fill",
+              "precipitation": "60",
+              "maxTemperature": "25",
+              "minTemperature": "20"
+            },
+            {
+              "week": "수",
+              "weather": "cloud.drizzle.fill",
+              "precipitation": "70",
+              "maxTemperature": "25",
+              "minTemperature": "17"
+            },
+            {
+              "week": "목",
+              "weather": "cloud.drizzle.fill",
+              "precipitation": "50",
+              "maxTemperature": "25",
+              "minTemperature": "17"
+            },
+            {
+              "week": "금",
+              "weather": "cloud.sun.fill",
+              "precipitation": "",
+              "maxTemperature": "26",
+              "minTemperature": "20"
+            },
+            {
+              "week": "토",
+              "weather": "sun.max.fill",
+              "precipitation": "",
+              "maxTemperature": "25",
+              "minTemperature": "18"
+            },
+            {
+              "week": "일",
+              "weather": "cloud.drizzle.fill",
+              "precipitation": "50",
+              "maxTemperature": "21",
+              "minTemperature": "13"
+            },
+            {
+              "week": "월",
+              "weather": "cloud.drizzle.fill",
+              "precipitation": "50",
+              "maxTemperature": "19",
+              "minTemperature": "12"
+            },
+            {
+              "week": "화",
+              "weather": "sun.max.fill",
+              "precipitation": "",
+              "maxTemperature": "27",
+              "minTemperature": "18"
+            },
+            {
+              "week": "수",
+              "weather": "sun.max.fill",
+              "precipitation": "",
+              "maxTemperature": "25",
+              "minTemperature": "18"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "headerInfo": {
+        "myLocation": "나의 위치",
+        "location": "인천광역시",
+        "weather": "흐림",
+        "temperature": "21",
+        "maxTemperature": "29",
+        "minTemperature": "15"
+      },
+      "sections": [
+        {
+          "timeWeatherInfo": [
+            {
+              "time": "Now",
+              "weather": "cloud.moon",
+              "temperature": "21"
+            },
+            {
+              "time": "10시",
+              "weather": "cloud.drizzle",
+              "temperature": "21"
+            },
+            {
+              "time": "11시",
+              "weather": "cloud.heavyrain",
+              "temperature": "19"
+            },
+            {
+              "time": "12시",
+              "weather": "cloud.bolt",
+              "temperature": "19"
+            },
+            {
+              "time": "1시",
+              "weather": "cloud.sun.rain",
+              "temperature": "19"
+            },
+            {
+              "time": "2시",
+              "weather": "cloud.moon",
+              "temperature": "20"
+            },
+            {
+              "time": "3시",
+              "weather": "cloud.drizzle",
+              "temperature": "21"
+            },
+            {
+              "time": "4시",
+              "weather": "cloud.heavyrain",
+              "temperature": "20"
+            },
+            {
+              "time": "5시",
+              "weather": "cloud.bolt",
+              "temperature": "19"
+            },
+            {
+              "time": "6시",
+              "weather": "cloud.sun.rain",
+              "temperature": "16"
+            }
+          ]
+        },
+        {
+          "dailyWeatherInfo": [
+            {
+              "week": "오늘",
+              "weather": "sun.max.fill",
+              "precipitation": "",
+              "maxTemperature": "29",
+              "minTemperature": "15"
+            },
+            {
+              "week": "월",
+              "weather": "cloud.drizzle.fill",
+              "precipitation": "60",
+              "maxTemperature": "18",
+              "minTemperature": "27"
+            },
+            {
+              "week": "화",
+              "weather": "cloud.drizzle.fill",
+              "precipitation": "60",
+              "maxTemperature": "20",
+              "minTemperature": "25"
+            },
+            {
+              "week": "수",
+              "weather": "cloud.drizzle.fill",
+              "precipitation": "70",
+              "maxTemperature": "25",
+              "minTemperature": "17"
+            },
+            {
+              "week": "목",
+              "weather": "cloud.drizzle.fill",
+              "precipitation": "50",
+              "maxTemperature": "25",
+              "minTemperature": "17"
+            },
+            {
+              "week": "금",
+              "weather": "cloud.sun.fill",
+              "precipitation": "",
+              "maxTemperature": "26",
+              "minTemperature": "20"
+            },
+            {
+              "week": "토",
+              "weather": "sun.max.fill",
+              "precipitation": "",
+              "maxTemperature": "25",
+              "minTemperature": "18"
+            },
+            {
+              "week": "일",
+              "weather": "cloud.drizzle.fill",
+              "precipitation": "50",
+              "maxTemperature": "21",
+              "minTemperature": "13"
+            },
+            {
+              "week": "월",
+              "weather": "cloud.drizzle.fill",
+              "precipitation": "50",
+              "maxTemperature": "19",
+              "minTemperature": "12"
+            },
+            {
+              "week": "화",
+              "weather": "sun.max.fill",
+              "precipitation": "",
+              "maxTemperature": "27",
+              "minTemperature": "18"
+            },
+            {
+              "week": "수",
+              "weather": "sun.max.fill",
+              "precipitation": "",
+              "maxTemperature": "25",
+              "minTemperature": "18"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

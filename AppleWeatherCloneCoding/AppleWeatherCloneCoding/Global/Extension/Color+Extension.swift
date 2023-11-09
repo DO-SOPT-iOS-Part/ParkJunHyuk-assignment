@@ -30,4 +30,33 @@ extension UIColor {
     static var backgroundTextFieldColor: UIColor {
         return UIColor(rgb: 0x1A1A1A)
     }
+    
+    static var headerTitleColor: UIColor {
+        return UIColor(rgb: 0x62666D)
+    }
+    
+    static var minTempColor: UIColor {
+        return UIColor(rgb: 0x6C7079)
+    }
+    
+    static var progressColor: UIColor {
+        return UIColor(rgb: 0x262B36)
+    }
+    
+    static var sectionBackgroundColor: UIColor {
+        return UIColor(rgb: 0x2D3340) 
+    }
+    
+    static var highTemperatureColor: UIColor {
+        return UIColor(rgb: 0xEF8835)
+    }
+    
+    static var rowTemperatureColor: UIColor {
+        return UIColor(rgb: 0xB5CF79)
+    }
+    
+    static var precipitationColor: UIColor {
+        return UIColor(rgb: 0x81CFFA)
+    }
+    
 }
