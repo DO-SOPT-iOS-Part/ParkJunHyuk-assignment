@@ -13,9 +13,7 @@ class WeatherTableViewCell: UITableViewCell {
     // MARK: - Property
     
     static let identifier: String = "WeatherDataTableViewCell"
-    
-//    var identifier: Int?
-    
+
     private let stackView = UIStackView().then {
         $0.axis = .vertical
         $0.distribution = .equalSpacing
@@ -32,15 +30,7 @@ class WeatherTableViewCell: UITableViewCell {
         $0.distribution = .fill
         $0.spacing = 16
     }
-    
-//    private lazy var mainStackView: UIStackView = {
-//        let stackView = UIStackView(arrangedSubviews: [horizontalTopStackView, horizontalBottomStackView])
-//        stackView.axis = .vertical
-//        stackView.distribution = .fill
-//        stackView.spacing = 16
-//        return stackView
-//    }()
-    
+
     private lazy var verticalLocationStackView: UIStackView = {
         let stackView = UIStackView(arrangedSubviews: [myLocationLabel, locationLabel])
         stackView.axis = .vertical
@@ -146,7 +136,6 @@ class WeatherTableViewCell: UITableViewCell {
             $0.top.equalToSuperview()
             $0.bottom.equalToSuperview().inset(16)
             $0.leading.trailing.equalToSuperview().inset(16)
-//            $0.height.equalTo(117)
         }
         
         mainStackView.snp.makeConstraints {
@@ -159,7 +148,6 @@ class WeatherTableViewCell: UITableViewCell {
     // MARK: - Method
     
     func bindingData(weatherData: ForecastInfo) {
-//        self.identifier = identifier
         myLocationLabel.text = weatherData.headerInfo.myLocation
         locationLabel.text = weatherData.headerInfo.location
         weatherLabel.text = weatherData.headerInfo.weather
@@ -167,12 +155,4 @@ class WeatherTableViewCell: UITableViewCell {
         maxTempLabel.text = "최고:\(weatherData.headerInfo.maxTemperature)°"
         minTempLabel.text = "최저:\(weatherData.headerInfo.minTemperature)°"
     }
-    
-//    func bindData(data: ItemListData) {
-//        self.productImageView.image = UIImage(named: data.image)
-//        self.productNameLabel.text = data.item
-//        self.priceLabel.text = data.price
-//        self.locationLabel.text = data.location
-//        self.likeButton.isSelected = data.isLike
-//    }
 }

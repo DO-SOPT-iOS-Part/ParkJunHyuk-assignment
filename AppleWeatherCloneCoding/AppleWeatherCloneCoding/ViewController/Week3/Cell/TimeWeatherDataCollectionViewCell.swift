@@ -13,15 +13,6 @@ class TimeWeatherDataCollectionViewCell: UICollectionViewCell {
     
     static let identifier: String = "TimeWeatherDataCollectionViewCell"
 
-//    private var todayForecastLabel: UILabel = {
-//        let label = UILabel()
-//        label.text = "08:00~09:00에 강우 상태가, 18:00에 한때 흐린 상태가 예상됩니다."
-//        label.numberOfLines = 0
-//        label.lineBreakMode = .byWordWrapping
-//        label.font = .regular(size: 18)
-//        return label
-//    }()
-    
     var timeLabel = UILabel().then {
         $0.font = .medium(size: 17)
     }
@@ -47,7 +38,6 @@ class TimeWeatherDataCollectionViewCell: UICollectionViewCell {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-//        self.backgroundColor = .clear
         self.setLayout()
     }
     
