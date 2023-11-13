@@ -13,6 +13,7 @@ enum AppFontName: String {
     case bold = "SFProDisplay-Bold"
     case light = "SFProDisplay-Light"
     case thin = "SFProDisplay-Thin"
+    case semibold = "SFProDisplay-Semibold"
     
     var name: String {
         return self.rawValue
@@ -39,5 +40,9 @@ extension UIFont {
     
     class func thin(size: CGFloat) -> UIFont {
         return UIFont(name: AppFontName.thin.rawValue, size: size)!
+    }
+    
+    class func semibold(size: CGFloat) -> UIFont {
+        return UIFont(name: AppFontName.semibold.rawValue, size: size)!
     }
 }
