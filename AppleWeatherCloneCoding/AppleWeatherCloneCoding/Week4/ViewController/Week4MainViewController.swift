@@ -103,7 +103,6 @@ class Week4MainViewController: UIViewController {
                     forecastInfo.sort { ($0?.name ?? "") < ($1?.name ?? "") }
                     tableView.reloadData()
                 }
-                
             } catch {
                 print("Error fetching weather data: \(error)")
             }
@@ -141,10 +140,10 @@ extension Week4MainViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         
-        //        let pageViewController = Week3DetailWeatherViewController()
-        //        pageViewController.bindData(forecaseInfo: forecastInfo[indexPath.row], identifier: indexPath.row)
-        //
-        //        navigationController?.pushViewController(pageViewController, animated: true)
+        let pageViewController = Week4DetailWeatherPageViewController(transitionStyle: .scroll, navigationOrientation: .horizontal)
+        pageViewController.bindData(forecastInfo: forecastInfo, identifier: indexPath.row)
+        
+        navigationController?.pushViewController(pageViewController, animated: true)
     }
 }
 
